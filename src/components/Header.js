@@ -4,12 +4,17 @@ import logoImg from '../img/logo.svg'
 import userImg from '../img/user.svg'
 
 const NavBar = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 13px 25px;
+  padding: 15px 25px;
+  width: 100%;
   background-color: #299B01;
   color: #ffffff;
+  z-index: 3;
 `;
 const Logo = styled.a`
   display: flex;
@@ -19,7 +24,6 @@ const ImgLogo = styled.img`
   
 `;
 const H2 = styled.h2`
-  font-family: 'Pacifico';
   font-size: 24px;
   font-weight: 400;
 `;
